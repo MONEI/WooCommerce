@@ -12,7 +12,7 @@ return apply_filters(
 		'enabled'        => array(
 			'title'   => __( 'Enable/Disable', 'monei' ),
 			'type'    => 'checkbox',
-			'label'   => __( 'Enable Bizum by MONEI', 'monei' ),
+			'label'   => __( 'Enable PayPal by MONEI', 'monei' ),
 			'default' => 'no',
 		),
 		'title'          => array(
@@ -28,16 +28,19 @@ return apply_filters(
 			'description' => __( 'This controls the description which the user sees during checkout.', 'monei' ),
 			'default'     => __( 'Pay via PayPal; you will be redirected to MONEI to pay.', 'monei' ),
 		),
-		'logo'           => array(
-			'title'       => __( 'Logo', 'monei' ),
-			'type'        => 'text',
-			'description' => __( 'Add link to image logo.', 'monei' ),
+		'hide_logo'        => array(
+			'title'   => __( 'Hide Logo', 'monei' ),
+			'type'    => 'checkbox',
+			'label'   => __( 'Hide Logo in checkout', 'monei' ),
+			'default' => 'no',
+			'description' => __( 'Hide Logo in checkout.', 'monei' ),
 			'desc_tip'    => true,
 		),
 		'apikey'       => array(
 			'title'       => __( 'API Key', 'monei' ),
 			'type'        => 'text',
-			'description' => __( 'API Key', 'monei' ),
+			'description' => __( 'Account ID and API key in the test mode are different from the live (production) mode and can only be used for testing purposes. Lean more" and a link to https://docs.monei.com/docs/testing/', 'monei' ),
+			'desc_tip'    => true,
 		),
 		'orderdo'     => array(
 			'title'       => __( 'What to do after payment?', 'monei' ),

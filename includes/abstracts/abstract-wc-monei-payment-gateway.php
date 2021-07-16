@@ -39,6 +39,12 @@ abstract class WC_Monei_Payment_Gateway extends WC_Payment_Gateway {
 	public $status_after_payment;
 
 	/**
+	 * Hide Logo in checkout.
+	 * @var bool
+	 */
+	public $hide_logo;
+
+	/**
 	 * Account ID.
 	 *
 	 * @var string
